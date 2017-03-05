@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quidditch Counter</string>
+    <string name="goal_points">Goal\n(10 points)</string>
+    <string name="snitch_points">Snitch\n(150 points)</string>
+    <string name="foul_points">Foul\n(-10 points)</string>
+    <string name="winner_message">%1$s caught the Snitch and won the game!</string>
+</resources>
