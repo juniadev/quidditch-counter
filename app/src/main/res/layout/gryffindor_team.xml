@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/gryffindor" />
+
+    <TextView
+        android:id="@+id/gryffindor_score"
+        android:text="0"
+        style="@style/score"/>
+
+    <Button
+        android:id="@+id/gryffindor_goal"
+        android:text="@string/goal_points"
+        android:onClick="goalForGryffindor"
+        style="@style/pointsButtons"/>
+
+    <Button
+        android:id="@+id/gryffindor_snitch"
+        android:text="@string/snitch_points"
+        android:onClick="snitchForGryffindor"
+        style="@style/pointsButtons"/>
+
+    <Button
+        android:id="@+id/gryffindor_foul"
+        android:text="@string/foul_points"
+        android:onClick="foulForGryffindor"
+        style="@style/pointsButtons"/>
+
+</LinearLayout>

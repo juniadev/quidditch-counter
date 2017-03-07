@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -16,82 +17,14 @@
         android:orientation="horizontal"
         android:id="@+id/linearLayout">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/gryffindor" />
-
-            <TextView
-                android:id="@+id/gryffindor_score"
-                android:text="0"
-                style="@style/score"/>
-
-            <Button
-                android:id="@+id/gryffindor_goal"
-                android:text="@string/goal_points"
-                android:onClick="goalForGryffindor"
-                style="@style/pointsButtons"/>
-
-            <Button
-                android:id="@+id/gryffindor_snitch"
-                android:text="@string/snitch_points"
-                android:onClick="snitchForGryffindor"
-                style="@style/pointsButtons"/>
-
-            <Button
-                android:id="@+id/gryffindor_foul"
-                android:text="@string/foul_points"
-                android:onClick="foulForGryffindor"
-                style="@style/pointsButtons"/>
-
-        </LinearLayout>
+        <include layout="@layout/gryffindor_team" />
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/slytherin" />
-
-            <TextView
-                android:id="@+id/slytherin_score"
-                android:text="0"
-                style="@style/score"/>
-
-            <Button
-                android:id="@+id/slytherin_goal"
-                android:text="@string/goal_points"
-                android:onClick="goalForSlytherin"
-                style="@style/pointsButtons"/>
-
-            <Button
-                android:id="@+id/slytherin_snitch"
-                android:text="@string/snitch_points"
-                android:onClick="snitchForSlytherin"
-                style="@style/pointsButtons"/>
-
-            <Button
-                android:id="@+id/slytherin_foul"
-                android:text="@string/foul_points"
-                android:onClick="foulForSlytherin"
-                style="@style/pointsButtons"/>
-
-        </LinearLayout>
+        <include layout="@layout/slytherin_team" />
 
     </LinearLayout>
 
